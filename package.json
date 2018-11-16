@@ -1,0 +1,15 @@
+{
+  "name": "catholic-insurance-man",
+  "version": "1.0.0",
+  "description": "\"Materialize Theme with SASS\"",
+  "main": "index.js",
+  "homepage": "https://github.com/twheelertech/catinsman",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "\"Phillip Wheeler\"",
+  "license": "All Rights Reserved",
+  "dependencies": {
+    "node-sass": "*"
+  }
+}
