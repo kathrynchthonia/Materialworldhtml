@@ -45,13 +45,23 @@
             <i class="material-icons">menu</i>
           </a>
           <ul class="right hide-on-med-and-down sr1">
-            <li><a href="#home">Home</a></li>
+            <li><a class='dropdown-trigger' data-target='dropdown-22' href="#">Home</a></li>
+            <ul id='dropdown-22' class='dropdown-content'>
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="#!">three</a></li>
+              <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+              <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+            </ul>
             <li><a href="#services">Our Services</a></li>
             <li><a href="#start">Get Started</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
+            <!-- Dropdown Structure -->
+        
       </nav>
     </div>
     <ul class="sidenav blue" id="mobile-nav">
@@ -572,6 +582,10 @@
         var initfab = document.querySelectorAll('.fixed-action-btn');
         var instances = M.FloatingActionButton.init(initfab, {direction: 'left', hover: true});
 
+
+        //Dropdown Menu
+        var dropdowns = document.querySelectorAll('.dropdown-trigger');
+        var ddinstances = M.Dropdown.init(dropdowns, {});
         });
     </script>
   </body>
